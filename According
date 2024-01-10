@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Solution {
+    public static void swapNumber(int[] a, int[] b) {
+        int temp = a[0];
+        a[0] = b[0];
+        b[0] = temp;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] a = new int[1];
+        int[] b = new int[1];
+
+        System.out.println("Enter the value of 'a':");
+        a[0] = sc.nextInt();
+
+        System.out.println("Enter the value of 'b':");
+        b[0] = sc.nextInt();
+
+        System.out.println("Before swapping: a = " + a[0] + ", b = " + b[0]);
+
+        swapNumber(a, b);
+
+        System.out.println("After swapping: a = " + a[0] + ", b = " + b[0]);
+    }
+}
